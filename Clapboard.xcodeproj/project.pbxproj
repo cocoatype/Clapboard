@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045392E12AAED364008ED728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045392E02AAED364008ED728 /* Constants.swift */; };
+		045392E32AAED37D008ED728 /* SignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045392E22AAED37D008ED728 /* SignalService.swift */; };
+		045392E52AAED397008ED728 /* SignalCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045392E42AAED397008ED728 /* SignalCharacteristic.swift */; };
+		045392E72AAED3AC008ED728 /* SignalSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045392E62AAED3AC008ED728 /* SignalSender.swift */; };
+		045392E92AAED3F3008ED728 /* SignalReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045392E82AAED3F3008ED728 /* SignalReceiver.swift */; };
 		04FF65B12AAEB8FB00EADABB /* ClapboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF65B02AAEB8FB00EADABB /* ClapboardApp.swift */; };
 		04FF65B32AAEB8FB00EADABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF65B22AAEB8FB00EADABB /* ContentView.swift */; };
 		04FF65B52AAEB8FE00EADABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF65B42AAEB8FE00EADABB /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045392E02AAED364008ED728 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		045392E22AAED37D008ED728 /* SignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalService.swift; sourceTree = "<group>"; };
+		045392E42AAED397008ED728 /* SignalCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalCharacteristic.swift; sourceTree = "<group>"; };
+		045392E62AAED3AC008ED728 /* SignalSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalSender.swift; sourceTree = "<group>"; };
+		045392E82AAED3F3008ED728 /* SignalReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalReceiver.swift; sourceTree = "<group>"; };
 		04FF65AD2AAEB8FB00EADABB /* Clapboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clapboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FF65B02AAEB8FB00EADABB /* ClapboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClapboardApp.swift; sourceTree = "<group>"; };
 		04FF65B22AAEB8FB00EADABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045392DF2AAED35B008ED728 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				045392E02AAED364008ED728 /* Constants.swift */,
+				045392E22AAED37D008ED728 /* SignalService.swift */,
+				045392E42AAED397008ED728 /* SignalCharacteristic.swift */,
+				045392E62AAED3AC008ED728 /* SignalSender.swift */,
+				045392E82AAED3F3008ED728 /* SignalReceiver.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
 		04FF65A42AAEB8FB00EADABB = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +76,7 @@
 			children = (
 				04FF65B02AAEB8FB00EADABB /* ClapboardApp.swift */,
 				04FF65B22AAEB8FB00EADABB /* ContentView.swift */,
+				045392DF2AAED35B008ED728 /* Communication */,
 				04FF65B42AAEB8FE00EADABB /* Assets.xcassets */,
 				04FF65B62AAEB8FE00EADABB /* Clapboard.entitlements */,
 				04FF65B72AAEB8FE00EADABB /* Preview Content */,
@@ -98,6 +121,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Cocoatype, LLC";
 				TargetAttributes = {
 					04FF65AC2AAEB8FB00EADABB = {
 						CreatedOnToolsVersion = 15.0;
@@ -140,7 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FF65B32AAEB8FB00EADABB /* ContentView.swift in Sources */,
+				045392E92AAED3F3008ED728 /* SignalReceiver.swift in Sources */,
+				045392E52AAED397008ED728 /* SignalCharacteristic.swift in Sources */,
 				04FF65B12AAEB8FB00EADABB /* ClapboardApp.swift in Sources */,
+				045392E12AAED364008ED728 /* Constants.swift in Sources */,
+				045392E72AAED3AC008ED728 /* SignalSender.swift in Sources */,
+				045392E32AAED37D008ED728 /* SignalService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bluetooths;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,6 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bluetooths;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -284,10 +315,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoatype.Clapboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,10 +353,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoatype.Clapboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
